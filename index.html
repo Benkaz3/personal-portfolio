@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dũng Trần's Portforlio</title>
+</head>
+<body>
+    <!-- Top Navigation Menu -->
+    <main class="container">
+<div class="topnav">
+    <div class="nav-container">
+        <a class="logo" href="#about">
+            <span>du</span>
+            <span>ng</span>
+        </a>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" id="nav-toggle">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#works">Works</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+</div>
+
+
+    <section id="about">
+        <h1 class="about-heading grey-large-text">About</h1>
+        <img 
+        src="images/hero.jpg" 
+        alt="sihoulette of a man on a staircase outdoor" 
+        class="hero-image">
+        <div class="about-content">
+            <h2 class="about-name">Trần<br>Anh Dũng</h2>
+            <div class="about-sub-section">
+                <p 
+                class="about-text grey-text paragraph-text">
+                I've been learning to become a frontend developer for almost a year. 
+                I am experienced with 
+                <span class="highlight-text">HTML, CSS, and JavaScript</span>. 
+                I am familiar with 
+                <span class="highlight-text">OOP</span> 
+                and I've started getting my feet wet with 
+                <span class="highlight-text">React</span>.
+                <br>I am looking for an internship or a fresher role 
+                so I can learn from the experts. 
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/dungtran83/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Benkaz3" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </div>
+            </div> 
+            <div class="contact-btn-wrapper">
+                <a class="contact-btn" href="#contact">contact me!</a>
+            </div>
+        </div>
+       
+    </section>
+    <section id="skills">
+        <h1 class="skill-heading grey-large-text">Skills</h1>
+        <div class="skill-sub-section">
+            <h2 class="my-skills">Some of my skills</h2>
+        <ul>
+            <li class="paragraph-text">Experienced in <span class="highlight-text">HTML, CSS, JavaScript </span></li>
+            <li class="paragraph-text">Basic exposure with <span class="highlight-text">React </span> 
+                and <span class="highlight-text">Git version control</span></li>
+            <li class="paragraph-text">Good <span class="highlight-text">problem-solving </span>skills and ability to work in a team environment</li>
+            <li class="paragraph-text">Excellent 
+                <span class="highlight-text">communication </span>
+                 and <span class="highlight-text">interpersonal </span>skills</li>
+            <li class="paragraph-text">Engish proficiency:  IELTS band 7.5</li>
+        </ul>
+        </div>
+        <img 
+        class="skill-image" 
+        src="images/skill-image.png" 
+        alt="random image">
+    </section>
+    <section id="works">
+        <p class="works-heading grey-large-text">Works</p>
+        <h2 class="my-projects">Done Projects</h2>
+        <div class="card">  
+            <h4 class="project-name">Blog journal</h4>
+            <a 
+                href="https://zippy-lebkuchen-116973.netlify.app/"
+                target="_blank">
+                <img class="project-image" 
+                src="images/blog-journal.png" 
+                alt="screenshot of a personal blog with a few blog entries">
+            </a>
+            <p 
+                class="project-description paragraph-text">
+                This blog joural is built with 3 web pages: Home, About, and A blog entry.
+                Aside from the normal stuff, I also used <span class="highlight-text">Grid </span> to make the layout responsive,
+                especially the properity of <span class="highlight-text">auto-fill </span> to make the entries apdapt to mobile 
+                screens. Another thing is <span class="highlight-text">JQuerry </span> which was compeltely new to me,
+                I used to make the navigation bar 
+                and the footer appear across pages. 
+            </p>
+            <a 
+                class="project-link" 
+                href="https://zippy-lebkuchen-116973.netlify.app/"
+                target="_blank">
+                view details
+            </a>
+        </div>
+        <div class="card">  
+            <h4 class="project-name">Random password generator</h4>
+            <a 
+                href="https://glittery-kringle-958717.netlify.app/"
+                target="_blank">
+                <img class="project-image" 
+                src="images/random-password-generator.png" 
+                alt="screenshot of a web app that generates two randome passwords">
+            </a>
+            <p 
+                class="project-description paragraph-text">
+                Given a positive integer as the password length, 
+                the app will generate two random passwords that include 
+                letters, numbers, and special characters. <br>
+                At the core of this app is the usage of the
+                Math library's <code>random()</code> and <code>floor()</code> methods.
+                There is also a little copy button where users can click 
+                to copy the password to clipboard.
+            </p>
+            <a 
+                class="project-link" 
+                href="https://glittery-kringle-958717.netlify.app/"
+                target="_blank">
+                view details
+            </a>
+        </div>
+        <div class="card"> 
+            <h4 class="project-name">Unit converter</h4> 
+            <a 
+                href="https://lively-griffin-c976e9.netlify.app/"
+                target="_blank">
+                <img class="project-image" 
+                src="images/converter.png" 
+                alt="screenshot of an app that converts metric to imperial and vice versa">
+            </a>
+            <p 
+                class="project-description paragraph-text">
+                The app converts 3 types of measurements from Metric system 
+                to the Imperial one: Length, Volume, and Mass.
+                It will then display the converted units in both systems.
+                <br><br>This app highlights basic Math operations and DOM element manipulation.
+                It also reinforces the concept of rendering HTML elements using JavaScript.
+            </p>
+            <a 
+                class="project-link" 
+                href="https://lively-griffin-c976e9.netlify.app/"
+                target="_blank">
+                view details
+            </a>
+        </div>
+        <div class="card"> 
+            <h4 class="project-name">Emojis saver</h4>
+            <a 
+                href="https://comfy-basbousa-ad85ad.netlify.app/" 
+                target="_blank">
+                <img class="project-image" 
+                src="images/emojis-saver.png" 
+                alt="screenshot of an app that saves a list of your favorite emojis">
+            </a>
+            <p 
+                class="project-description paragraph-text">
+                This little app saves and your favorite emojis to a list.
+                You can add more to or remove emojis from the list
+                as you wish.
+                <br><br>This program highlights the applications of commonly used JavaScript methods: 
+                <code>unshift()</code>, <code>shift()</code>, and <code>unshift()</code>
+                to manipulate arrays.
+                It also helps me practice rendering HTML elements with JavaScript.
+            </p>
+            <a 
+                class="project-link" 
+                href="https://comfy-basbousa-ad85ad.netlify.app/"
+                target="_blank">
+                view details
+            </a>
+        </div>
+        <div class="card">
+            <h4 class="project-name">Digital game scoreboard</h4>
+            <a 
+                href="https://joyful-crumble-4c5f66.netlify.app/"
+                target="_blank">
+                <img class="project-image" 
+                src="images/game-score-board.png" 
+                alt="A screenshot of a digital game scoreboard">
+            </a>
+            <p 
+                class="project-description paragraph-text">
+                A game scoreboard where users can enter scores for 
+                their favorite team. The New Game button will reset 
+                the scores to zero.
+                <br><br>This is one of my first experiences working
+                with JavaScript. It helps me practice the basic concepts 
+                such as variables, string concatenation, incrementing and decrementing.
+
+            </p>
+            <a 
+            class="project-link" 
+            href="https://joyful-crumble-4c5f66.netlify.app/"
+            target="_blank">
+            view details
+        </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="contact-heading grey-large-text">Contact</p>
+        <h2 class="my-contact">Contact Me</h2>
+        <div class="contact-info">
+            <h4 class="contact-me">My Contact</h4>
+            <p class="contact-phone paragraph-text">
+                <i class="fa fa-phone fa-fw"></i>
+                +84 86 860 2790
+            </p>
+            <a 
+                class="contact-email paragraph-text" 
+                href="mailto:tran.dung@hotmail.com?subject=Hi&body=Let's%20talk!"
+                target="_blank" 
+                rel="noopener noreferrer">
+                <i class="fa fa-envelope fa-fw"></i>
+                tran.dung@hotmail.com
+            </a>
+            <a class="contact-website paragraph-text" href="#">
+                <i class="fa fa-globe fa-fw"></i>
+                www.dungtran.io
+            </a>
+        </div>
+        
+        <form class="contact-form">
+            <label for="message-content"></label>
+            <textarea 
+            rows="8" 
+            cols="50"
+            name="message-content" placeholder="Message"></textarea>  
+            <label for="message-name"></label>
+            <input type="text" placeholder="Name" name="message-name">
+            <label for="message-email"></label>
+            <input type="text" placeholder="Email" name="messsage-email">
+            <label for="submit-btn"></label>
+            <input 
+            class="submit-btn" 
+            type="submit"
+            value="SEND MESSAGE"
+            name="submit-btn">
+        </form>
+    </section>
+
+<footer>
+    <p class="footer-text">
+        &copy; 2020 Dung Tran. All rights reserved.
+    </p>
+
+</footer>
+</main>
+
+<!-- JS -->
+
+<script src="index.js"></script>
+    
+</body>
+</html>

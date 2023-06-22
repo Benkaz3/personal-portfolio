@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 32px 15px;
+    font-family: 'Karla', sans-serif;
+    background-color: #fafafa;
+}
+
+.container {
+  width: 100%;
+  max-width: 769px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.grey-large-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 66px;
+  color: #F0F0F0;
+  text-align: center;
+  margin: 40px auto 30px auto;
+}
+
+.paragraph-text {
+  font-family: inherit;
+  font-weight: 400;
+  size: 16px;
+  line-height: 28.8px;
+  color: #4d4d4d;
+}
+
+.highlight-text {
+  color: #CA82F8;
+
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+  text-align: center;
+}
+
+.topnav #myLinks a {
+  color: #4d4d4d;
+  font-family: inherit;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: 'Karla', sans-serif;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #000;
+  padding: 7px;
+  text-align: center;
+  background: #000;
+  display: block;
+  letter-spacing: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo >span {
+  color: #fff;
+  display: block;
+  line-height: 1.2;
+}
+
+.fa {
+  color: black;
+  font-size: 35px;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  display: block;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  color: white;
+}
+/* Container */
+
+
+
+/* About Section */
+
+.hero-image {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.about-name, 
+.my-skills, 
+.my-projects,
+.my-contact {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  line-height: 65px;
+  font-weight: 400;
+  margin-bottom: 20px; 
+}
+
+.about-text, ul {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28.8px;
+  margin: 0;
+}
+
+.about-sub-section {
+  display: flex;
+  flex-direction: column;
+  margin: auto; 
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: 30px; 
+  justify-content: center;
+}
+
+.fa-linkedin,
+.fa-github {
+  color: #CA82F8;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.contact-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-btn {
+  border: 1px solid #d9d9d9;
+  padding: 8px 35px; 
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #4d4d4d;
+  letter-spacing: 2px;
+  border-radius: 1px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.skill-image {
+  display: none; 
+}
+
+#skills ul li {
+  line-height: 2.5;
+}
+
+.card {
+  width: 100%;
+  text-decoration: none;
+  /* border: 1px solid salmon;  */
+  margin-top: 30px; 
+}
+
+.project-image {
+  width: 100%; 
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color:#4d4d4d;
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
+
+.project-link {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #000;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-contact {
+  text-align: center;
+}
+
+.contact-phone,
+.contact-email,
+.contact-website {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-top: 20px; 
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-globe {
+  color: #CA82F8;
+  font-size: 24px;
+}
+
+form {
+  display: flex; 
+  flex-direction: column;
+  gap: 10px; 
+  margin-top: 30px; 
+}
+
+textarea,
+input {
+  border: none; 
+  background-color: white; 
+  border-radius: 3px;
+  font-family: inherit;
+  color: #4d4d4d; 
+}
+
+::placeholder
+ {  
+  padding: 5px 10px; 
+} 
+
+input {
+  height: 50px; 
+}
+
+.submit-btn {
+  background: #d49af9; 
+  letter-spacing: 2px;
+  font-size: 13px;
+  line-height: 1.8; 
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-phone {
+  margin: 0 auto;
+}
+
+/* footer */
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+/* desktop */
+
+@media screen and (min-width: 768px) {
+
+#about,
+#skills,
+#works,
+#contact {
+  display: flex;
+  width: 100%;
+  position: relative;
+  /* gap: 50px; */
+  margin-top: 50px 0; 
+  padding: 100px 0;
+}
+
+.my-projects,
+.my-contact {
+  margin: 0 auto; 
+}
+
+.about-heading,
+.skill-heading,
+.works-heading,
+.contact-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  font-size: 250px;
+  font-weight: 700;
+  z-index: -1;
+}
+
+.about-sub-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.skill-sub-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.social-icons {
+  margin-top: 15px; 
+
+}
+
+.contact-btn-wrapper {
+  display: block; 
+ 
+}
+
+.skill-image {
+  display: block; 
+  width: 50%;
+  max-width: 500px ;
+  object-fit: cover;
+
+}
+
+#works {
+  flex-direction: column;
+}
+
+.about-content {
+  margin-left: 15px; 
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "name name"
+  "image description"
+  "image link";
+  gap: 10px;
+
+}
+
+.project-name {grid-area: name;}
+.project-image {grid-area: image;}
+.project-description {grid-area: description;}
+.project-link {grid-area: link;}
+
+
+#contact {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+  "my-contact my-contact"
+  "contact-info contact-form";
+  gap: 10px;
+}
+
+.my-contact {grid-area: my-contact;}
+.contact-info {grid-area: contact-info;}
+.contact-form {grid-area: contact-form;}
+
+
+
+}
